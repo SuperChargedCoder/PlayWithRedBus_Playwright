@@ -1,0 +1,21 @@
+{
+  "name": "automated_redbus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "TrainFunctionality": "npx cucumber-js --tags '@Train' --exit --format html:TrainTestingCucumberReport.html",
+    "BusFunctionality": "npx cucumber-js --tags '@Bus' --exit --format html:BusTestingCucumberReport.html",
+    "RegressionTeting": "npx cucumber-js --tags '@Bus or @Train' --exit --format html:RegressionTestingCucumberReport.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.7"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.2.0"
+  }
+}
